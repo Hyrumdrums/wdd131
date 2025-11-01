@@ -10,14 +10,41 @@
   --primary-padding: 2rem;
   --secondary-padding: 1rem;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* google font */
 
-p {
+p,
+span {
   font-family: "Bitcount Grid Single", system-ui;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
   font-variation-settings: "slnt" 0, "CRSV" 0.5, "ELSH" 0, "ELXP" 0;
+}
+
+header,
+footer {
+  background-color: var(--primary-color);
+  color: var(--text-main-color);
+}
+
+header {
+  width: 100%;
+  text-align: center;
+}
+
+header span {
+  font-size: 2rem;
+  padding: var(--primary-padding);
+}
+
+footer {
 }
 
 header span {
@@ -26,11 +53,29 @@ header span {
 
 nav {
   display: flex;
+  background-color: var(--tertiary-color);
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+nav ul a {
+  text-decoration: none;
+  color: var(--text-primary-color);
+}
+
+nav li {
+  list-style-type: none;
+  padding: var(--secondary-padding);
 }
 
 nav li:hover {
   cursor: pointer;
   background-color: var(--secondary-color);
+  color: var(--text-secondary-color);
 }
 
 main {
