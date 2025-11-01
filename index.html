@@ -11,6 +11,13 @@
     />
     <meta name="author" content="Dallin Layton" />
     <link rel="stylesheet" href="styles/base.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="scripts/getdates.js" defer></script>
   </head>
   <body>
     <header>
@@ -36,18 +43,39 @@
     <main>
       <h1>Dallin Layton</h1>
       <section class="card">
-        <h2>Heading!</h2>
+        <h2>About Me</h2>
+        <p>
+          My name is Dallin and I go by.. Dallin. I was born in Ogden, UT and
+          live with my family in Ogden, UT. I am currently looking for work as a
+          senior web developer. My children are my favorite people and I love
+          laughing and having a good time with them. I love to tinker in the
+          garage and figure out how thinks work.
+        </p>
         <img src="images/sample-image.jpg" alt="Sample Image" />
-        <p>Some content</p>
+        <h3>Ogden, UT</h3>
+        <img src="images/sample-image.jpg" alt="Union Station" />
+        <p>
+          Ogden is home to the Union Station, now a museum it was once a busling
+          hub for Government agencies and railroad traffic. Now it's considered
+          to be one of the slums of UT, but like any city has some nicer and
+          less nice areas.
+        </p>
       </section>
       <section class="card">
-        <h2>Heading!</h2>
+        <h2>Web Dev Resources</h2>
         <img src="images/sample-image.jpg" alt="Sample Image" />
-        <p>Some content</p>
+        <ul>
+          <li>
+            <a href="https://developer.mozilla.org/en-US/">MDN Web Docs</a>
+          </li>
+          <li><a href="https://www.w3schools.com/">W3 Schools</a></li>
+          <li><a href="https://css-tricks.com/">CSS Tricks</a></li>
+          <li><a href="https://stackoverflow.com/">Stack Overflow</a></li>
+        </ul>
       </section>
     </main>
     <footer>
-      <p><span id="currentyear"></span> | Dallin Layton | USA</p>
+      <p><span id="currentYear"></span> | Dallin Layton | USA</p>
       <p id="lastModified"></p>
     </footer>
   </body>

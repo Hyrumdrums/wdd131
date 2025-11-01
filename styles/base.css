@@ -1,0 +1,44 @@
+:root {
+  --primary-color: #19381f; /* dark-green */
+  --secondary-color: #eee82c; /* yellow */
+  --tertiary-color: #91cb3e; /* yellow-green */
+
+  --text-main-color: #ffffff; /* for dark-green */
+  --text-secondary-color: #19381f; /* for yellow */
+  --text-tertiary-color: #19381f; /* for yellow-green */
+
+  --primary-padding: 2rem;
+  --secondary-padding: 1rem;
+}
+/* google font */
+
+p {
+  font-family: "Bitcount Grid Single", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "slnt" 0, "CRSV" 0.5, "ELSH" 0, "ELXP" 0;
+}
+
+header span {
+  display: block;
+}
+
+nav {
+  display: flex;
+}
+
+nav li:hover {
+  cursor: pointer;
+  background-color: var(--secondary-color);
+}
+
+main {
+  width: 700px;
+  margin: auto;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr;
+}
