@@ -33,7 +33,7 @@ a {
   font-variation-settings: "slnt" 0, "CRSV" 0.5, "ELSH" 0, "ELXP" 0;
 }
 
-header,
+header span,
 footer {
   background-color: var(--primary-color);
   color: var(--text-primary-color);
