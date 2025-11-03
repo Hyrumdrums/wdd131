@@ -3,9 +3,12 @@
   --secondary-color: #eee82c; /* yellow */
   --tertiary-color: #91cb3e; /* yellow-green */
 
-  --text-main-color: #ffffff; /* for dark-green */
+  --text-primary-color: #ffffff; /* for dark-green */
   --text-secondary-color: #19381f; /* for yellow */
   --text-tertiary-color: #19381f; /* for yellow-green */
+
+  --primary-margin: 2rem;
+  --secondary-margin: 1rem;
 
   --primary-padding: 2rem;
   --secondary-padding: 1rem;
@@ -20,7 +23,10 @@
 /* google font */
 
 p,
-span {
+span,
+h1,
+h2,
+a {
   font-family: "Bitcount Grid Single", system-ui;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -31,7 +37,6 @@ span {
 header,
 footer {
   background-color: var(--primary-color);
-  color: var(--text-main-color);
 }
 
 header {
@@ -42,6 +47,7 @@ header {
 header span {
   font-size: 2rem;
   padding: var(--primary-padding);
+  color: var(--text-primary-color);
 }
 
 footer {
@@ -75,15 +81,63 @@ nav li {
 nav li:hover {
   cursor: pointer;
   background-color: var(--secondary-color);
+}
+
+nav li:hover a {
   color: var(--text-secondary-color);
 }
 
 main {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: var(--primary-margin);
   width: 700px;
-  margin: auto;
+  margin: var(--primary-margin);
 }
 
 .card {
-  display: grid;
-  grid-template-columns: 1fr;
+  border: 1px solid var(--primary-color);
+  border-radius: 1rem;
+  /* margin: var(--primary-margin); */
+}
+
+.card h2 {
+  text-align: center;
+  background-color: var(--primary-color);
+  color: var(--text-primary-color);
+  border-radius: 1rem 1rem 0 0;
+  padding: var(--secondary-padding);
+}
+
+.card p {
+  padding: var(--secondary-padding);
+  line-height: 1.5;
+}
+
+.card h3 {
+  margin: 0 var(--primary-margin);
+  padding: var(--secondary-padding);
+  text-align: center;
+  border-bottom: 1px solid var(--primary-color);
+}
+
+.resources {
+  padding: var(--secondary-padding);
+  list-style-type: none;
+}
+
+.resources li {
+  padding-top: var(--secondary-padding);
+}
+
+#profile-image {
+  float: right;
+  width: 200px;
+  margin: var(--secondary-margin);
+}
+
+#ogden-image {
+  width: 150px;
+  float: left;
+  margin: var(--secondary-margin);
 }
