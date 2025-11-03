@@ -91,14 +91,13 @@ main {
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: var(--primary-margin);
-  width: 700px;
-  margin: var(--primary-margin);
+  width: 1200px;
+  margin: var(--primary-margin) auto;
 }
 
 .card {
   border: 1px solid var(--primary-color);
   border-radius: 1rem;
-  /* margin: var(--primary-margin); */
 }
 
 .card h2 {
@@ -121,9 +120,19 @@ main {
   border-bottom: 1px solid var(--primary-color);
 }
 
+.resources-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+}
+
 .resources {
   padding: var(--secondary-padding);
   list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .resources li {
@@ -140,4 +149,17 @@ main {
   width: 150px;
   float: left;
   margin: var(--secondary-margin);
+}
+
+.resources-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 350px;
+}
+
+.resources-card .resources-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
