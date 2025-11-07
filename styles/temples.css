@@ -1,3 +1,31 @@
+:root {
+  --primary-color: #2d3142; /* deep blue-gray */
+  --secondary-color: #ef8354; /* warm orange */
+  --tertiary-color: #bfc0c0; /* soft gray */
+
+  --text-primary-color: #ffffff; /* for deep blue-gray */
+  --text-secondary-color: #2d3142; /* for warm orange */
+  --text-tertiary-color: #2d3142; /* for soft gray */
+
+  --primary-margin: 2rem;
+  --secondary-margin: 1rem;
+
+  --primary-padding: 2rem;
+  --secondary-padding: 1rem;
+}
+
+h1,
+a,
+p {
+  font-family: "Momo Signature", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* h1 {
+  background-color: var(--primary-color);
+} */
+
 nav {
   display: none;
 }
