@@ -9,7 +9,8 @@
   }
 
   nav ul li a:hover {
-    background-color: blue;
+    text-decoration: underline double;
+    background-color: var(--secondary-color);
   }
 
   nav {

@@ -40,10 +40,17 @@ nav {
 
 nav ul {
   list-style-type: none;
+  background-color: var(--tertiary-color);
+}
+
+nav ul li {
+  text-align: center;
+  padding: var(--secondary-padding);
 }
 
 nav ul li a {
   text-decoration: none;
+  color: var(--text-secondary-color);
 }
 
 main {
@@ -51,11 +58,25 @@ main {
   margin: 0 auto;
 }
 
+figcaption {
+  text-align: center;
+  margin-top: 0.5rem;
+  font-style: italic;
+  color: var(--text-secondary-color);
+}
+
 .temple-gallery {
+  width: 100%;
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
-  padding: 20px;
+  padding: var(--secondary-padding);
+}
+
+.temple-gallery img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 .hamburger-menu {
@@ -68,4 +89,9 @@ main {
   padding: 10px;
   color: var(--text-primary-color);
   user-select: none;
+}
+
+footer {
+  text-align: center;
+  padding: var(--secondary-padding);
 }
