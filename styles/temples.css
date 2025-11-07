@@ -22,16 +22,33 @@
 
 h1,
 a,
-p {
+p,
+figcaption {
   font-family: "Momo Signature", cursive;
   font-weight: 400;
   font-style: normal;
 }
 
-h1 {
+header > div {
   background-color: var(--primary-color);
   color: var(--text-primary-color);
   padding: var(--primary-padding);
+  font-size: 2rem;
+  font-family: "Momo Signature", cursive;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+}
+
+h1 {
+  background: none;
+  color: var(--primary-color);
+  padding: var(--primary-padding);
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Momo Signature", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
 
 nav {
@@ -70,7 +87,6 @@ figcaption {
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
-  padding: var(--secondary-padding);
 }
 
 .temple-gallery img {
