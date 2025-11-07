@@ -14,6 +14,12 @@
   --secondary-padding: 1rem;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 h1,
 a,
 p {
@@ -22,9 +28,11 @@ p {
   font-style: normal;
 }
 
-/* h1 {
+h1 {
   background-color: var(--primary-color);
-} */
+  color: var(--text-primary-color);
+  padding: var(--primary-padding);
+}
 
 nav {
   display: none;
@@ -57,4 +65,7 @@ main {
   position: absolute;
   top: 20px;
   right: 20px;
+  padding: 10px;
+  color: var(--text-primary-color);
+  user-select: none;
 }
