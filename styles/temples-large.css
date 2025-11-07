@@ -3,4 +3,25 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
+
+  nav ul li a {
+    padding: 10px 15px;
+  }
+
+  nav ul li a:hover {
+    background-color: blue;
+  }
+
+  nav {
+    display: block;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .hamburger-menu {
+    display: none;
+  }
 }
