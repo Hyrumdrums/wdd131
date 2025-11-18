@@ -1,11 +1,11 @@
 :root {
-  --primary-color: #a3d9a5;      /* Soft pastel green */
-  --secondary-color: #fff7b2;    /* Soft pastel yellow */
-  --tertiary-color: #c7d7f9;     /* Soft pastel blue */
+  --primary-color: #a3d9a5; /* Soft pastel green */
+  --secondary-color: #fff7b2; /* Soft pastel yellow */
+  --tertiary-color: #c7d7f9; /* Soft pastel blue */
 
   --text-primary-color: #2d3a2d; /* Gentle dark green for text */
-  --text-secondary-color: #a3a32d; /* Soft olive for accents */
-  --text-tertiary-color: #6d7b8d; /* Muted blue-gray for less important text */
+  --text-secondary-color: #383810; /* Soft olive for accents */
+  --text-tertiary-color: #1b1f24; /* Muted blue-gray for less important text */
 
   --primary-margin: 2rem;
   --secondary-margin: 1rem;
@@ -48,6 +48,7 @@ h2 {
 }
 
 main picture img {
+  display: block;
   width: 100%;
   height: auto;
 }
@@ -73,6 +74,7 @@ main section div {
 
 main section div:nth-of-type(odd) {
   text-align: right;
+  font-weight: bold;
 }
 
 main section div:nth-of-type(odd)::after {
@@ -82,4 +84,12 @@ main section div:nth-of-type(odd)::after {
 .weather-icon {
   grid-column: 1 / span 2;
   margin: 0 auto;
+}
+
+footer {
+  background-color: var(--secondary-color);
+  color: var(--text-secondary-color);
+  text-align: center;
+  padding: var(--secondary-padding);
+  font-size: 0.875rem;
 }
