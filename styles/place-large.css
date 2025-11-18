@@ -1,2 +1,46 @@
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1200px) {
+  /* Full screen width */
+  header,
+  footer,
+  main {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+  }
+  main picture img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    height: 700px;
+    object-position: center 15%;
+  }
+
+  /* make image large and hero, with data and weather sections on top of it */
+  main section:nth-of-type(odd) {
+    position: absolute;
+    top: 200px;
+    left: 100px;
+  }
+  main section:nth-of-type(even) {
+    position: absolute;
+    top: 450px;
+    right: 100px;
+  }
+
+  main section:nth-of-type(even) h2::after {
+    content: "  ⛅";
+  }
+
+  main section h2 {
+    text-align: left;
+    width: 100%;
+    padding: 1rem 1.5rem;
+    transform: translateX(-3rem);
+    background-color: var(--tertiary-color);
+  }
+
+  .weather-icon {
+    display: none;
+  }
 }
