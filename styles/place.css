@@ -1,0 +1,85 @@
+:root {
+  --primary-color: #a3d9a5;      /* Soft pastel green */
+  --secondary-color: #fff7b2;    /* Soft pastel yellow */
+  --tertiary-color: #c7d7f9;     /* Soft pastel blue */
+
+  --text-primary-color: #2d3a2d; /* Gentle dark green for text */
+  --text-secondary-color: #a3a32d; /* Soft olive for accents */
+  --text-tertiary-color: #6d7b8d; /* Muted blue-gray for less important text */
+
+  --primary-margin: 2rem;
+  --secondary-margin: 1rem;
+
+  --primary-padding: 2rem;
+  --secondary-padding: 1rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header,
+main,
+footer {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+body {
+  background-color: var(--tertiary-color);
+}
+
+header {
+  background-color: var(--primary-color);
+  color: var(--text-primary-color);
+  text-align: center;
+  width: 100%;
+  padding: 4rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+}
+
+main picture img {
+  width: 100%;
+  height: auto;
+}
+
+main section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--secondary-padding);
+  background-color: var(--primary-color);
+  padding: var(--primary-margin);
+}
+
+main section h2 {
+  grid-column: 1 / span 2;
+  width: 100%;
+  text-align: center;
+  color: var(--text-primary-color);
+}
+
+main section div {
+  color: var(--text-primary-color);
+}
+
+main section div:nth-of-type(odd) {
+  text-align: right;
+}
+
+main section div:nth-of-type(odd)::after {
+  content: ":";
+}
+
+.weather-icon {
+  grid-column: 1 / span 2;
+  margin: 0 auto;
+}
