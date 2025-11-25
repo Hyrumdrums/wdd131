@@ -1,0 +1,112 @@
+:root {
+  --primary-color: #2d3142; /* deep blue-gray */
+  --secondary-color: #ef8354; /* warm orange */
+  --tertiary-color: #bfc0c0; /* soft gray */
+
+  --text-primary-color: #ffffff; /* for deep blue-gray */
+  --text-secondary-color: #000000; /* for warm orange */
+  --text-tertiary-color: #2d3142; /* for soft gray */
+
+  --primary-margin: 2rem;
+  --secondary-margin: 1rem;
+
+  --primary-padding: 2rem;
+  --secondary-padding: 1rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+a,
+p {
+  font-family: "Momo Signature", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+header > div {
+  background-color: var(--primary-color);
+  color: var(--text-primary-color);
+  padding: var(--primary-padding);
+  font-size: 2rem;
+  font-family: "Momo Signature", cursive;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+}
+
+h1 {
+  background: none;
+  color: var(--primary-color);
+  padding: var(--primary-padding);
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Momo Signature", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+nav {
+  display: none;
+}
+
+nav ul {
+  list-style-type: none;
+  background-color: var(--tertiary-color);
+}
+
+nav ul li {
+  text-align: center;
+  padding: var(--secondary-padding);
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--text-secondary-color);
+}
+
+main {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.temple-gallery {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.temple-gallery img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.temple-card {
+  border: 1px solid var(--primary-color);
+  padding: var(--secondary-padding);
+  background-color: var(--tertiary-color);
+  text-align: center;
+}
+
+.hamburger-menu {
+  display: block;
+  font-size: 30px;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 10px;
+  color: var(--text-primary-color);
+  user-select: none;
+}
+
+footer {
+  text-align: center;
+  padding: var(--secondary-padding);
+}

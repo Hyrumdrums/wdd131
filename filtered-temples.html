@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temple Album</title>
+    <meta
+      name="description"
+      content="Temple Album containing a list of temples and their images."
+    />
+    <meta name="author" content="Dallin Layton" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Momo+Signature&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/filtered-temples.css" />
+    <link rel="stylesheet" href="styles/filtered-temples-large.css" />
+    <script src="scripts/filtered-temples.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="hamburger-menu">☰</div>
+      <div>Temple Album</div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="about.html">Home</a></li>
+          <li><a href="about.html">Old</a></li>
+          <li><a href="about.html">New</a></li>
+          <li><a href="about.html">Large</a></li>
+          <li><a href="about.html">Small</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Home</h1>
+      <div class="temple-gallery"></div>
+    </main>
+    <footer>
+      <p><span id="currentYear"></span> | Dallin Layton | USA</p>
+      <p id="lastModified"></p>
+    </footer>
+  </body>
+</html>
