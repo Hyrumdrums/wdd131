@@ -42,6 +42,7 @@ section {
   background-color: var(--secondary-color);
   color: var(--text-secondary-color);
   padding: var(--primary-padding);
+  margin-bottom: var(--primary-margin);
 }
 
 ul li {
@@ -50,4 +51,36 @@ ul li {
 
 p {
   margin: 1rem 0;
+}
+
+.space-font,
+h2 {
+  font-family: "Exo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.space-mono-bold {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.space-mono-regular-italic {
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.space-mono-bold-italic {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-style: italic;
 }
