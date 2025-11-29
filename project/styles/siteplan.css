@@ -56,7 +56,6 @@ p {
 .space-font,
 h2 {
   font-family: "Exo", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }
