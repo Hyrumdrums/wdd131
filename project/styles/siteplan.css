@@ -38,12 +38,9 @@ h1 {
   font-size: 3rem;
 }
 
-h2 {
-  /* margin: var(--secondary-margin) 0; */
-}
-
 section {
   background-color: var(--secondary-color);
+  background-color: rgb(from var(--secondary-color) r g b / 0.3);
   color: var(--text-secondary-color);
   padding: var(--primary-padding);
 }
