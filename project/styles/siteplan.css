@@ -33,13 +33,11 @@ body {
 h1 {
   text-align: center;
   color: var(--text-primary-color);
-  background-color: none;
   background-color: rgba(0, 0, 0, 0);
   font-size: 3rem;
 }
 
 section {
-  background-color: var(--secondary-color);
   background-color: rgb(from var(--secondary-color) r g b / 0.3);
   color: var(--text-secondary-color);
   padding: var(--primary-padding);
