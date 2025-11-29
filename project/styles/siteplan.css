@@ -39,7 +39,7 @@ h1 {
 }
 
 section {
-  background-color: rgb(from var(--secondary-color) r g b / 0.3);
+  background-color: var(--secondary-color);
   color: var(--text-secondary-color);
   padding: var(--primary-padding);
 }
