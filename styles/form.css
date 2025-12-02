@@ -1,0 +1,98 @@
+:root {
+  --primary-color: #ff937e;
+  --secondary-color: #a3d78a;
+
+  --text-primary-color: #c1e59f;
+  --text-secondary-color: #ff5555;
+
+  --primary-margin: 2rem;
+  --secondary-margin: 1rem;
+
+  --primary-padding: 2rem;
+  --secondary-padding: 1rem;
+
+  --primary-fontsize: 2rem;
+  --secondary-fontsize: 1rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.form-container {
+  width: 100%;
+  max-width: 600px;
+  background-color: var(--primary-color);
+  padding: var(--primary-padding);
+  border-radius: 32px;
+}
+
+h1 {
+  text-align: center;
+  padding: 1rem;
+  font-size: 2.5rem;
+
+  margin-bottom: var(--primary-margin);
+  background-color: var(--secondary-color);
+  border-radius: 16px;
+}
+
+label {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+input {
+  margin: 0.5rem 0;
+  font-size: var(--secondary-fontsize);
+  padding: var(--secondary-padding);
+}
+
+.form-group,
+.rating-container {
+  margin-bottom: var(--secondary-margin);
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+select {
+  width: 100%;
+  padding: var(--secondary-padding);
+  font-size: var(--secondary-fontsize);
+  border-radius: 8px;
+}
+
+.rating-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.rating-label {
+  width: 100%; /* forces the Rating label onto its own line */
+}
+
+.rating-container input {
+  margin-right: 0.5rem;
+  font-size: var(--primary-fontsize);
+}
+
+input[type="date"] {
+  width: 100%;
+  font-size: var(--secondary-fontsize);
+  padding: var(--secondary-padding);
+}
+
+textarea {
+  font-size: var(--secondary-fontsize);
+  padding: var(--secondary-padding);
+}
+
+input[type="radio"] {
+  transform: scale(1.5);
+}
