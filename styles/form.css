@@ -97,3 +97,8 @@ textarea {
 input[type="radio"] {
   transform: scale(1.5);
 }
+
+.features-checkboxes-container label {
+  display: inline;
+  margin-bottom: 0;
+}
