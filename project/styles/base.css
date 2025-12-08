@@ -1,3 +1,29 @@
+/* CSS Custom Properties */
+:root {
+  --primary-color: #000000; /* Black */
+  --secondary-color: #5d737e; /* Blue Slate */
+  --tertiary-color: #fff07c; /* Banana Cream */
+  --quaternary-color: #f0f7ee; /* Mint Cream */
+  --quinary-color: #87bba2; /* Muted Teal */
+
+  --text-primary-color: #f0f7ee; /* Mint Cream - for use on Black background */
+  --text-secondary-color: #f0f7ee; /* Mint Cream - for use on Blue Slate background */
+  --text-tertiary-color: #000000; /* Black - for use on Banana Cream background */
+  --text-quaternary-color: #000000; /* Black - for use on Mint Cream background */
+  --text-quinary-color: #000000; /* Black - for use on Muted Teal background */
+
+  --primary-margin: 2rem;
+  --secondary-margin: 1rem;
+
+  --primary-padding: 2rem;
+  --secondary-padding: 1rem;
+
+  --font-heading: "Exo", sans-serif;
+  --font-body: "Space Mono", monospace;
+  --font-mono-regular: "Space Mono", monospace;
+  --font-mono-bold: "Space Mono", monospace;
+}
+
 /* Base styles */
 * {
   margin: 0;
@@ -6,8 +32,31 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  max-width: 750px;
+  margin: var(--primary-margin) auto;
+  background-color: var(--primary-color);
+  font-family: var(--font-body);
   line-height: 1.6;
+}
+
+h1 {
+  text-align: center;
+  color: var(--text-primary-color);
+  font-family: var(--font-heading);
+  font-size: 3rem;
+  margin-bottom: var(--primary-margin);
+}
+
+h2 {
+  font-family: var(--font-heading);
+  margin-bottom: 0.5rem;
+}
+
+section {
+  background-color: var(--secondary-color);
+  color: var(--text-secondary-color);
+  padding: var(--primary-padding);
+  margin-bottom: var(--primary-margin);
 }
 
 /* Footer styles */
