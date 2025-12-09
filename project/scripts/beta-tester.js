@@ -1,1 +1,0 @@
-// Beta tester specific JavaScript

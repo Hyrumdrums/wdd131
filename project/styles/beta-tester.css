@@ -1,1 +1,25 @@
-/* Beta tester specific styles */
+form {
+  display: grid;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+form input,
+form textarea {
+  margin-bottom: 1rem;
+  padding: var(--secondary-padding);
+  font-size: large;
+}
+
+form button {
+  background-color: var(--tertiary-color);
+  color: var(--text-tertiary-color);
+  border: none;
+  padding: 0.75rem;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: var(--primary-color);
+  color: var(--text-primary-color);
+}
