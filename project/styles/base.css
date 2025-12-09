@@ -71,3 +71,44 @@ footer {
 footer p {
   margin: 0.2rem 0;
 }
+
+p {
+  margin-bottom: var(--secondary-margin);
+}
+
+a {
+  color: var(--tertiary-color);
+  text-decoration: none;
+}
+
+.inline-image {
+  display: block;
+  max-width: 50%;
+  height: auto;
+  margin: 1rem auto;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav a {
+  background-color: var(--secondary-color);
+  color: var(--text-secondary-color);
+  padding: var(--secondary-padding) var(--primary-padding);
+  margin-bottom: var(--primary-margin);
+  text-decoration: none;
+}
+
+.nav a:hover {
+  background-color: var(--tertiary-color);
+  color: var(--text-tertiary-color);
+}
+
+.screenshot {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 1rem auto;
+}

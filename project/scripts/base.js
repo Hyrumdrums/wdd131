@@ -7,20 +7,13 @@ const navItems = [
 // Create navigation
 function createNav() {
   const navDiv = document.querySelector(".nav");
-  const nav = document.createElement("nav");
-  const ul = document.createElement("ul");
 
   navItems.forEach((item) => {
-    const li = document.createElement("li");
     const a = document.createElement("a");
     a.href = item.url;
     a.textContent = item.name;
-    li.appendChild(a);
-    ul.appendChild(li);
+    navDiv.appendChild(a);
   });
-
-  nav.appendChild(ul);
-  navDiv.appendChild(nav);
 }
 
 // update footer
