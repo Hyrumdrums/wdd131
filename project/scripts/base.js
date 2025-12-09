@@ -1,17 +1,24 @@
 const navItems = [
   { name: "Home", url: "index.html" },
-  { name: "Beta Tester", url: "beta-tester.html" },
   { name: "Gallery", url: "gallery.html" },
+  { name: "Beta Tester", url: "beta-tester.html" },
 ];
 
 // Create navigation
 function createNav() {
   const navDiv = document.querySelector(".nav");
+  const currentPage = window.location.pathname.split("/").pop() || "index.html";
 
   navItems.forEach((item) => {
     const a = document.createElement("a");
     a.href = item.url;
     a.textContent = item.name;
+    
+    // Add current class if this is the current page
+    if (item.url === currentPage) {
+      a.classList.add("current");
+    }
+    
     navDiv.appendChild(a);
   });
 }

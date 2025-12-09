@@ -1,4 +1,19 @@
-.nav {
-  flex-direction: row;
-  justify-content: space-between;
+@media screen and (min-width: 1200px) {
+  .nav {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  body {
+    max-width: 1200px;
+  }
+
+  .game-length {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .screenshot {
+    min-width: 500px;
+  }
 }
